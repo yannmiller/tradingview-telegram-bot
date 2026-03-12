@@ -28,15 +28,15 @@ def webhook():
     tp2 = data.get("tp2")
     tp3 = data.get("tp3")
 
-    message = f"""
-{action} {symbol}
+ message = f"""
+🚨 {symbol} {action}
 
-Entry: {entry}
-SL: {sl}
+Entry : {entry}
+Stop : {sl}
 
-TP1: {tp1}
-TP2: {tp2}
-TP3: {tp3}
+🎯 TP1 : {tp1}
+🎯 TP2 : {tp2}
+🎯 TP3 : {tp3}
 """
 
     send_telegram(message)
